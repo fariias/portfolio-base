@@ -3,11 +3,14 @@ import { NgModule } from '@angular/core';
 
 
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { UnhideApiService } from './unhide-api.service';
 import { AppComponent } from './app.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { DetailsComponent } from './details/details.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DataBase } from './db'
 
 @NgModule({
   declarations: [
@@ -18,9 +21,10 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
-  providers: [UnhideApiService],
+  providers: [UnhideApiService, DataBase],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

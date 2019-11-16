@@ -1,17 +1,24 @@
+
+header{
+    background-color: #141414;
+}
+
+
 header a {
     font-weight: bold;
     text-transform: uppercase;
     font-size: .8em;
-    color: #2d414e;
+    color: #1EE3FF;
 }
 
 #auth-lnk { 
-    color: #000;
+    color: white;
     font-size: 2em;
     font-weight: bold;
 }
 
-p.subtxt { 
+p.subtxt {
+    color: white;
     font-size: 1.1em;
 }
 

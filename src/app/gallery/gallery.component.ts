@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UnhideApiService } from '../unhide-api.service';
+import { DataBase } from '../db';
 
 @Component({
   selector: 'app-gallery',
@@ -9,14 +9,13 @@ import { UnhideApiService } from '../unhide-api.service';
 export class GalleryComponent implements OnInit {
   projects: any;
 
-  constructor(private unhideapi: UnhideApiService) {}
+  constructor(private db: DataBase) {}
 
   ngOnInit() {
 
-    this.unhideapi.getProjects().subscribe(projects => {
-      this.projects = projects.dict.user.sketchbookitems
-    })
-
+    this.projects = this.db.getProjects();
+    
   }
 
 }
+  

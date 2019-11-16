@@ -1,4 +1,31 @@
 <div *ngIf="projects">
+    <div id="thumb-container">
+        <div *ngFor="let project of projects" class="thumbs">
+            <a routerLink="/project/{{project.id}}">
+                <div class="project-info">
+                    <p>{{project.name}}</p>
+                </div>
 
-    {{ projects | json}}
+                <img src="{{ project.img }}" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="grid-x pad feature">
+    <div class="cell small-12 large-1">
+        <img src="assets/icon-pencil.png">
+    </div>
+    <div class="cell small-12 large-5">
+        <h3>Frontend Development</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+    
+    <div class="cell small-12 large-1 offset-1">
+        <img src="assets/icon-code.png">
+    </div>
+    <div class="cell small-12 large-5">
+        <h3>Backend Development</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
 </div>

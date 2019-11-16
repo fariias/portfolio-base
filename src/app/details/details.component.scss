@@ -1,0 +1,86 @@
+.detail-left {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: 100% !important;
+}
+
+.detail-right {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #141414;
+    padding: 5rem;
+}
+
+.detail-right h1, p{
+    color: white;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+a#backlink {
+    margin-left: -18px;
+    margin-bottom: 50px;
+    display: block;
+    color: white;
+    opacity: 0.5;
+}
+
+#slider {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: #1EE3FF;
+    left: 0;
+    top: 0;
+}
+
+a#project-link {
+    background-color: #1EE3FF;
+    color: white;
+    padding: 12px 17px;
+    margin-top: 40px;
+    display: block;
+    text-align: center;
+    border-radius: 30px;
+    -moz-border-radius: 30px;  
+}
+
+a#project-link:hover {
+    opacity: 0.5; 
+}
+
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+    .detail-right {
+        width: 50%;
+        padding: 2.5em;
+    }
+
+}
+
+/* max-width 640px, mobile-only styles */
+@media only screen and (max-width: 40em) {
+
+   .detail-left {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+   }
+
+   .detail-right {
+       position: relative;
+       width: 100%;
+       height: 100%;
+       padding: 2em;
+   }
+
+}
